@@ -17,7 +17,7 @@ export default defineConfig({
     host: true, // 监听所有地址，包括局域网和公网地址
   },
   preview: {
-    port: 80, // 预览服务器端口
+    port: 8000, // 预览服务器端口
     host: true, // 监听所有地址，包括局域网和公网地址
     strictPort: true, // 端口被占用时，抛出错误
   },
