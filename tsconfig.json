@@ -14,8 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "env/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

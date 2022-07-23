@@ -12,6 +12,9 @@ export default defineConfig({
       'src/': `${path.resolve(__dirname, 'src')}/`, // 别名，指向 src 目录
     },
   },
+  define: {
+    'process.env': {}, // 一些包需要此全局变量
+  },
   server: {
     port: 3000, // 开发服务器端口
     host: true, // 监听所有地址，包括局域网和公网地址
