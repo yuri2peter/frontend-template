@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-import { exampleSlice } from './reducers/example';
+import example from './reducers/example';
 
 const reducers = combineReducers({
-  example: exampleSlice.reducer,
+  example,
 });
 
 const store = configureStore({
